@@ -1,0 +1,11 @@
+[package]
+title = "Maze Runner UI"
+version = "1.0.0"
+
+[dependencies]
+"omni.kit.uiapp" = {}
+"omni.ui" = {}
+
+[[python.module]]
+name = "omni.mazerunner"
+path = "."
