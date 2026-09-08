@@ -1,0 +1,45 @@
+"""
+constants.py
+============
+Zentrale Konstanten für die gesamte Extension.
+Hier liegen alle Farbwerte, MQTT-Settings und API-Konfiguration.
+USD-Pfade und Geometriewerte des Deckel-Joints → deckel_joint_handler.py
+"""
+
+# -------------------------------------------------------------------------
+# Farben (ARGB-Hex) für die UI
+# -------------------------------------------------------------------------
+CLR_BG_DARK     = 0xFF0A0F1A   # Sehr dunkler Hintergrund (Header)
+CLR_BG_MID      = 0xFF101828   # Mittlerer Hintergrund (Toolbar, Liste)
+CLR_BG_ROW_A    = 0xFF121E30   # Zeilenfarbe gerade
+CLR_BG_ROW_B    = 0xFF162438   # Zeilenfarbe ungerade
+CLR_BG_HEADER   = 0xFF0D1420   # Spaltenkopf
+CLR_ACCENT      = 0xFF4A9EFF   # Akzentfarbe (Info)
+CLR_GREEN       = 0xFF4ADE80   # OK / TRUE
+CLR_RED         = 0xFFEF6B6B   # Fehler / FALSE
+CLR_YELLOW      = 0xFFE0B040   # Warnung / pending
+CLR_ORANGE      = 0xFFE08040   # Velocity-Impuls aktiv
+CLR_TEXT        = 0xFFD0D8E8   # Primärtext
+CLR_TEXT_DIM    = 0xFF607090   # Sekundärtext
+CLR_TEXT_FAINT  = 0xFF405070   # Hint / sehr leise
+CLR_BORDER      = 0xFF1A2840   # Trennlinien
+
+# -------------------------------------------------------------------------
+# Log-Konfiguration
+# -------------------------------------------------------------------------
+MAX_LOG_LINES = 80   # Maximale Anzahl Log-Zeilen im UI
+
+# -------------------------------------------------------------------------
+# MQTT-Konfiguration (entspricht Unity-Setup / HS Rhein-Main)
+# -------------------------------------------------------------------------
+MQTT_BROKER     = "digitaltwinservice.de"
+MQTT_PORT       = 1883
+MQTT_KEEPALIVE  = 60
+MQTT_WS_URL     = "ws://digitaltwinservice.de:9001/mqtt"  # WebSocket-Transport
+
+# -------------------------------------------------------------------------
+# REST-API-Endpunkte
+# -------------------------------------------------------------------------
+API_URL_GET = "https://digitaltwinservice.de/api/Database/GetValue"
+API_URL_SET = "https://digitaltwinservice.de/api/Database/SetValue"
+API_KEY     = "2b56f658-b11f-4067-9537-631bf27a30f0"       # persönlichen DigitalTwinApp - API-Schluessel setzen
